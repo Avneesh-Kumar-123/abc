@@ -1,0 +1,75 @@
+New Static Site
+It looks like you're using static files, so we've autofilled some fields accordingly.
+Source Code
+Avneesh-Kumar-123
+/
+check
+3m ago
+
+Edit
+Name
+A unique name for your static site.
+cat-chase
+
+ProjectOptional
+Add this static site to a project once it’s created.
+
+Project
+
+My project
+/
+Environment
+
+Production
+Branch
+The Git branch to build and deploy.
+Branch
+main
+
+Root DirectoryOptional
+If set, Render runs commands from this directory instead of the repository root. Additionally, code changes outside of this directory do not trigger an auto-deploy. Most commonly used with a monorepo.
+e.g. src
+Build Command
+Render runs this command to build your app before each deploy.
+$
+npm install -g pnpm@10 && pnpm install && pnpm --filter @workspace/cat-chase run build
+Publish Directory
+The relative path of the directory containing built assets to publish. Examples: ./, ./build, dist and frontend/build.
+artifacts/cat-chase/dist/public
+Environment Variables
+Set environment-specific config and secrets (such as API keys), then read those values from your code. Learn more.
+NAME_OF_VARIABLE
+value
+
+Generate
+
+
+Add Environment Variable
+
+Add from .env
+
+Advanced
+Secret Files
+Store plaintext files containing secret data (such as a .env file or a private key).
+Access during builds and at runtime from your app's root, or from /etc/secrets/<filename>.
+
+Add Secret File
+Auto-Deploy
+By default, Render automatically deploys your service whenever you update its code or configuration. Disable to handle deploys manually. Learn more.
+autoDeployTrigger
+
+On Commit
+Build Filters
+Include or ignore specific paths in your repo when determining whether to trigger an auto-deploy. Paths are relative to your repo's root directory. Learn more.
+Included Paths
+Changes that match these paths will trigger a new build.
+
+e.g static/foo/baz/**
+
+
+Add Included Path
+Ignored Paths
+Changes that match these paths will not trigger a new build.
+
+
+Add Ignored Path
