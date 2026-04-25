@@ -135,9 +135,22 @@ export const Splash = ({ save, onSave }: Props) => {
           </Link>
         </motion.div>
 
-        <p className="absolute bottom-4 inset-x-0 text-center text-xs text-foreground/50 font-bold">
-          v1.0 · Made with paws and pixels
-        </p>
+        <div className="absolute bottom-4 inset-x-0 flex flex-col items-center gap-1.5 text-xs text-foreground/60 font-bold px-4">
+          <div className="flex items-center gap-3 flex-wrap justify-center">
+            <Link href="/about" className="hover:text-foreground transition-colors" data-testid="link-about">
+              About Us
+            </Link>
+            <span className="opacity-40">·</span>
+            <Link href="/contact" className="hover:text-foreground transition-colors" data-testid="link-contact">
+              Contact Us
+            </Link>
+            <span className="opacity-40">·</span>
+            <Link href="/privacy" className="hover:text-foreground transition-colors" data-testid="link-privacy">
+              Privacy Policy
+            </Link>
+          </div>
+          <p className="opacity-70">v1.0 · Made with paws and pixels</p>
+        </div>
       </div>
 
       <SettingsPanel

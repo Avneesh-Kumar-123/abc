@@ -8,6 +8,9 @@ import { Levels } from "@/pages/Levels";
 import { HowToPlay } from "@/pages/HowToPlay";
 import { Credits } from "@/pages/Credits";
 import { Play } from "@/pages/Play";
+import { PrivacyPolicy } from "@/pages/PrivacyPolicy";
+import { AboutUs } from "@/pages/AboutUs";
+import { ContactUs } from "@/pages/ContactUs";
 import { LEVELS } from "@/game/levels";
 import { loadSave } from "@/game/storage";
 import { setAudioMuted } from "@/game/audio";
@@ -37,6 +40,9 @@ function App() {
           <Route path="/levels" component={() => <Levels save={save} />} />
           <Route path="/how-to-play" component={() => <HowToPlay />} />
           <Route path="/credits" component={() => <Credits />} />
+          <Route path="/privacy" component={() => <PrivacyPolicy />} />
+          <Route path="/about" component={() => <AboutUs />} />
+          <Route path="/contact" component={() => <ContactUs />} />
           <Route component={NotFound} />
         </Switch>
         <Toaster />
