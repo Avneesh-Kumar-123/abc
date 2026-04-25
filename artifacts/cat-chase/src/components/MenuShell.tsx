@@ -50,7 +50,7 @@ export const MenuShell = ({ children, onSettings, showBack = true, themeBg }: Pr
       </div>
 
       {/* Top bar */}
-      <div className="absolute top-0 inset-x-0 z-10 px-4 py-4 flex items-center justify-between">
+      <div className="absolute top-0 inset-x-0 z-30 px-4 py-4 flex items-center justify-between">
         {showBack ? (
           <Button
             size="icon"
