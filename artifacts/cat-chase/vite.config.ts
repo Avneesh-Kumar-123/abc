@@ -7,10 +7,8 @@ import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 const rawPort = process.env.PORT ?? "5173";
 const port = Number(rawPort);
 
-const basePath = process.env.BASE_PATH ?? "/";
-
 export default defineConfig({
-  base: basePath,
+  base: "/",
   plugins: [
     react(),
     tailwindcss(),
